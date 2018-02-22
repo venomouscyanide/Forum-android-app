@@ -1,0 +1,156 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.paul.myapplication.Activity.VideoGames1"
+    android:orientation="vertical">
+
+    <!--
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginBottom="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Section"
+                    android:textSize="30dp"
+
+                    android:id="@+id/section"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:padding="10dp"
+                android:layout_height="wrap_content"
+                android:background="#AAA"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Topic :"
+                    android:textSize="20dp"
+                    android:textColor="#000"
+                    android:id="@+id/topic"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:src="@drawable/hi"
+                        android:id="@+id/picture"
+                        />
+
+                    <LinearLayout
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:paddingTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Submitted by :"
+                            android:textSize="15dp"
+                            android:textColor="#000"
+                            android:id="@+id/submitter"
+                            />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="At time :"
+                            android:textSize="15dp"
+                            android:textColor="#000"
+                            android:id="@+id/time"
+                            android:paddingBottom="10dp"
+                            />
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="wrap_content"
+                        android:text="Report "
+                        android:background="#C0392B"
+                        android:layout_margin="5dp"
+                        android:id="@+id/report"
+
+                        />
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_weight="4"
+                        android:layout_margin="5dp"
+                        android:layout_height="wrap_content"
+                        android:text="Reply to this post"
+                        android:textColor="#FFF"
+                        android:background="#000"
+                        android:id="@+id/replybutton"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:background="#CCC">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Replies to this post"
+                    android:textSize="20dp"
+                    android:textColor="#000"/>
+
+                <ListView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/replylist">
+
+                </ListView>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--
+    </ScrollView>
+    -->
+</LinearLayout>
